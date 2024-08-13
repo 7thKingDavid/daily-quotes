@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith Quotes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Loading Animation (Bible with flipping pages) -->
+    <div id="loader" class="bible-loader">
+        <div class="cover">
+            <div class="page"></div>
+            <div class="page"></div>
+            <div class="page"></div>
+            <div class="page"></div>
+            <div class="page"></div>
+            <div class="page"></div>
+            <div class="page"></div>
+        </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div id="alertModal" class="modal">
+        <div class="modal-content">
+            <h2>PRAISE GOD FORTUNE IS MY PORTION IN 2024</h2>
+            <p>I AM ALSO REDEEMED TO FLOURISH IN HARD TIMES!<br>CONGRATULATIONS<br>AMEN AND AMEN!</p>
+            <button id="closeAlertBtn">Amen</button>
+        </div>
+    </div>
+
+    <!-- Header Section with Logo, Social Media Icons, and Buttons -->
+    <header>
+        <div class="logo">Faith Quotes</div>
+        <nav>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon"><img src="facebook-icon.png"
+                    alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon"><img src="twitter-icon.png"
+                    alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon"><img src="instagram-icon.png"
+                    alt="Instagram"></a>
+            <button>Sign Up</button>
+            <button>Login</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>What is the Lord saying to you today?</h2>
+        <button id="quoteBtn">Click the button below to find out</button>
+        <div id="quoteSection"></div>
+
+        <!-- Testimony Form -->
+        <div id="testimonyForm">
+            <h3>Share Your Testimony</h3>
+            <form>
+                <input type="text" id="name" placeholder="Your Name">
+                <textarea id="testimony" placeholder="What the Lord has done"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Recommended Books Section -->
+        <div id="recommendedBooks">
+            <h3>Recommended Books for the Month</h3>
+            <div class="book-list">
+                <a href="url_to_online_bookstore_1" target="_blank" class="book"
+                    style="background-image: url('url_to_book_image_1');"></a>
+                <a href="url_to_online_bookstore_2" target="_blank" class="book"
+                    style="background-image: url('url_to_book_image_2');"></a>
+                <!-- Add more books here... -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact Information | All rights reserved © 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
