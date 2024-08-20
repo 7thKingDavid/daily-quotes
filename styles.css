@@ -1,0 +1,221 @@
+/* General Styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    overflow: hidden;
+}
+
+/* Bible Loading Animation */
+.bible-loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 120px;
+    perspective: 1000px;
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #a52a2a;
+    /* Dark red cover for the Bible */
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform-origin: left;
+    transform: rotateY(0deg);
+    animation: flip 1.5s infinite;
+}
+
+.page:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.page:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.page:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.page:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.page:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.page:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(-180deg);
+    }
+
+    100% {
+        transform: rotateY(-180deg);
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(158, 29, 29);
+    color: white;
+    align-items: center;
+
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Social Media Icons and Buttons in Header */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon img {
+    width: 29px;
+    height: 29px;
+    transition: transform 0.3s ease;
+    margin: 3px;
+    border-radius: 50%;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+}
+
+nav button {
+    background-color: yellow;
+    color: red;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+main {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: yellow;
+    color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+}
+
+#quoteSection {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#testimonyForm {
+    margin-top: 60px;
+}
+
+#testimonyForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+}
+
+/* Book List Styles */
+.book-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.book {
+    display: block;
+    width: 120px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: red;
+    color: white;
+    margin-top: 40px;
+}
