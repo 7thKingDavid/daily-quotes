@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faith Quotes</title>
+    <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Loading Animation (Bible with flipping pages) 
+    <!-- Loading Animation (Bible with flipping pages) -->
     <div id="loader" class="bible-loader">
         <div class="cover">
             <div class="page"></div>
@@ -21,73 +22,78 @@
             <div class="page"></div>
             <div class="page"></div>
         </div>
-    </div> -->
+    </div>
 
     <!-- Alert Modal -->
     <div id="alertModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content ">
             <h2>PRAISE GOD FORTUNE IS MY PORTION IN 2024</h2>
-            <p>I AM ALSO REDEEMED TO FLOURISH IN HARD TIMES!<br>CONGRATULATIONS<br>AMEN AND AMEN!</p>
+            <p>I AM ALSO REDEEMED TO FLOURISH IN HARD TIMES!<br><br>CONGRATULATIONS!<br><br>AMEN AND AMEN!</p>
             <button id="closeAlertBtn">Amen</button>
         </div>
     </div>
+    <div id="contentWrapper" class="blur">
+        <!-- Header Section with Logo, Social Media Icons, and Buttons -->
+        <header>
+            <div class="logo">SpiritSpeaks</div>
+            <nav>
 
-    <!-- Header Section with Logo, Social Media Icons, and Buttons -->
-    <header>
-        <div class="logo">SpiritSpeaks</div>
-        <nav>
-            <a href="https://contactcentre.faithtabernacle.org.ng/testimony.html" target="_blank"
-                class="social-icon"><img src="./images/LFC_logo.png" alt="Facebook"></a>
-            <a href="twitter.com/davidoyedepomin" target="_blank" class="social-icon"><img src="./images/Twitter X.png"
-                    alt="Twitter"></a>
-            <a href="https://youtube.com/@lfcww?si=3ISUHiRVHn2_FDoR" target="_blank" class="social-icon"><img
-                    src="./images/youtube.png" alt="YouTube"></a>
-            <button>Sign Up</button>
-            <button>Login</button>
-        </nav>
-    </header>
+                <a href="https://www.facebook.com/davidoyedepoministries" target="_blank" class="social-icon"><img
+                        src="./images/Facebook_logo_(square).png" alt="Twitter"></a>
+                <a href="https://youtube.com/@lfcww?si=3ISUHiRVHn2_FDoR" target="_blank" class="social-icon"><img
+                        src="./images/youtube.png" alt="YouTube"></a>
+                <button>Sign Up</button>
+                <button>Login</button>
+            </nav>
+        </header>
 
-    <!-- Main Content -->
-    <main>
-        <h2>What is the Lord saying to you today?</h2>
-        <button id="quoteBtn">Click the button to find out</button>
-        <div id="quoteSection"></div>
+        <!-- Main Content -->
+        <main>
+            <h2><em>What is the Lord saying to you today?</em></h2>
+            <button id="quoteBtn">Click the button to find out</button>
+            <div id="quoteSection"></div>
 
-        <!-- Testimony Form -->
-        <div id="testimonyForm">
-            <h3>Share Your Testimony</h3>
-            <form>
-                <input type="text" id="name" placeholder="Your Name">
-                <textarea id="testimony" placeholder="What the Lord has done"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-
-        <!-- Recommended Books Section -->
-        <div id="recommendedBooks">
-            <h3>Recommended Books for the Month of August 2024</h3>
-            <div class="book-list">
-                <a href="https://www.amazon.com/Healing-Balm-David-Oyedepo-1996-05-04/dp/B01FKS6WF8" target="_blank"
-                    class="book" style="background-image: url(./images/healing-balm.jpeg);"></a>
-                <a href="https://www.amazon.com/Healing-Ministry-Jesus-Christ/dp/9782480290" target="_blank"
-                    class="book" style="background-image: url(./images/healing-ministry.jpeg);"></a>
-                <a href="https://www.amazon.com/Satan-Get-Lost-D-Oyedepo/dp/9782480088" target="_blank" class="book"
-                    style="background-image: url(./images/satan-get-lost.jpeg);"></a>
-                <a href="https://www.amazon.com/Born-win-David-Oyedepo/dp/B0007C0Y5W" target="_blank" class="book"
-                    style="background-image: url(./images/born\ to\ win.jpeg);"></a>
-                <a href="https://www.amazon.com/Keys-Divine-Health-David-Oyedepo/dp/9782480282" target="_blank"
-                    class="book" style="background-image: url(./images/keys\ to\ divine\ health.jpeg);"></a>
+            <figure class="image">
+                <img src="./images/August.jpeg">
+                <figcaption><p>Monthly Declaration</p></figcaption>
+            </figure>
+            <!-- Testimony Form -->
+            <div id="testimonyForm">
+                <h3>Share Your Testimony</h3>
+                <form>
+                    <input type="text" id="name" placeholder="Your Name">
+                    <textarea id="testimony" placeholder="What the Lord has done"></textarea>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
             </div>
-        </div>
 
-    </main>
+            <!-- Recommended Books Section -->
+            <div id="recommendedBooks">
+                <h3>Recommended Books for the Month of August 2024</h3>
+                <div class="book-list">
+                    <a href="https://www.amazon.com/Healing-Balm-David-Oyedepo-1996-05-04/dp/B01FKS6WF8" target="_blank"
+                        class="book" style="background-image: url(./images/healing-balm.jpeg);"></a>
+                    <a href="https://www.amazon.com/Healing-Ministry-Jesus-Christ/dp/9782480290" target="_blank"
+                        class="book" style="background-image: url(./images/healing-ministry.jpeg);"></a>
+                    <a href="https://www.amazon.com/Satan-Get-Lost-D-Oyedepo/dp/9782480088" target="_blank" class="book"
+                        style="background-image: url(./images/satan-get-lost.jpeg);"></a>
+                    <a href="https://www.amazon.com/Born-win-David-Oyedepo/dp/B0007C0Y5W" target="_blank" class="book"
+                        style="background-image: url(./images/born\ to\ win.jpeg);"></a>
+                    <a href="https://www.amazon.com/Keys-Divine-Health-David-Oyedepo/dp/9782480282" target="_blank"
+                        class="book" style="background-image: url(./images/keys\ to\ divine\ health.jpeg);"></a>
+                </div>
+            </div>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>BluSpace Multimedia | All rights reserved © 2024</p>
-    </footer>
+        </main>
 
-    <script src="script.js"></script>
+        <!-- Footer Section -->
+        <footer>
+            <p>BluSpace Multimedia | All rights reserved © 2024</p>
+        </footer>
+
+        <script src="daily-quotes.js"></script>
+
+    </div>
 </body>
 
 </html>
