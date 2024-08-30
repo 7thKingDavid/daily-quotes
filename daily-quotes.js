@@ -1,3 +1,4 @@
+// My Document Object Model
 document.addEventListener('DOMContentLoaded', function () {
     const loader = document.getElementById('loader');
     const alertModal = document.getElementById('alertModal');
@@ -23,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setTimeout(() => {
         loader.style.display = 'none'; // Hide the loader
-        contentWrapper.style.display = 'block'; // Show the content after loading
-        alertModal.style.display = 'flex'; // Show the alert modal after loading
-        contentWrapper.classList.add('blur'); // Apply blur effect to content
+        contentWrapper.style.display = 'block'; // shows the content again
+        alertModal.style.display = 'flex'; // displays the alert
+        contentWrapper.classList.add('blur'); // makes the content of the page blur while alert is on
     }, 3000); // Keep loader for 3 seconds
 
     // Close the alert modal when the OK button is clicked
@@ -47,5 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
         quoteSection.style.backgroundImage = backgroundImageUrl;
 
         quoteBtn.disabled = true; // Disable the button to prevent multiple clicks in a day
+        quoteBtn.style.display = 'none'; // makes the button to disappear after click
     });
 });
